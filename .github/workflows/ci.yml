@@ -2,7 +2,7 @@ name: CI
 
 on: 
   schedule:
-    - cron: "15 14 * * *"
+    - cron: "0 14 * * *"
 jobs:
   build:
 
@@ -17,3 +17,4 @@ jobs:
         upstream_branch: master
         local_branch: master
 	github_token: ${{ secrets.GITHUB_TOKEN }}
+	
