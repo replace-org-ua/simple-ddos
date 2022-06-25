@@ -1,4 +1,4 @@
- name: CI
+name: CI
 
 on: 
   schedule:
@@ -13,7 +13,6 @@ jobs:
     - name: Fetch upstream
       uses: tjusl/sync-upstream-repo@v0.1.6
       with:
-      #Git upstream repo
         upstream_repo: https://github.com/BogdanDevUA/simple-ddos.git
         upstream_branch: master
         local_branch: master
